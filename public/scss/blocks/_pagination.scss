@@ -1,0 +1,28 @@
+.pagination {
+    @include flex(row, center, normal);
+
+    &__wrapper {
+        margin: 18px 0 96px 0;
+        @include size(283px, 43px);
+        @include flex(row, space-between, center);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $grey-color;
+        @include font(16px, 300, 19px);
+
+        &:hover:not(.pagination__link--active) {
+            color: $text-color;
+            font-weight: 700;
+        }
+            
+        &--active {
+            color: $pink-pagination;
+            cursor: default;
+        }
+        &--size {
+            padding-top: 3px; 
+        }
+    }
+}

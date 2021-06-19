@@ -1,0 +1,171 @@
+.dropdowns {
+    margin-bottom: 65px;
+    margin-top: 51px;
+    display: flex;
+    align-items: center;
+    @include tablet {
+        justify-content: space-between;
+    }
+    @include mobile {
+
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+    
+    &__heading {
+        @include flex(row, space-between, center);
+        @include font(14px, 400, 17px);
+        @include mobile {
+            @include font(12px, 400, 14px);
+        }
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $grey-color;
+        
+        &--filter {
+            margin: 0 304px 0 16px;
+            font-weight: 600;
+            color: #000;
+            @include tablet {
+                margin-left: 0;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+        
+        &--trending,
+        &--size {
+            margin-right: 28px;
+            @include mobile {
+                margin-right: 23px;
+            }
+        }
+        
+        &:hover {
+            color: $text-color;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        & svg {
+            padding-left: 12px;
+        }
+        
+        &:hover svg {
+            fill: $text-color;
+        }
+    }
+
+    &__icon-filter {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    
+    &__list {
+        display: none;
+        z-index: 10;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        background-color: $white;
+
+        &--filter {
+            @include size(360px, 485px);
+            @include position(0px, 22px);
+            @include mobile {
+                top: 28px;
+            }
+        }
+        
+        &--trending {
+            @include size(140px, 150px);
+            @include position(-10px, 22px);
+            padding: 10px 0 0 10px;
+        }
+        
+        &--size {
+            @include size(75px, 103px);
+            @include position(-9px, 22px);
+            @include font(13px, 400, 16px);
+            padding: 10px 0 0 10px;
+            text-transform: uppercase;
+        }
+        
+        &--price {
+            @include size(79px, 103px);
+            @include position(-10px, 22px);
+            padding: 10px 0 0 10px;
+        }
+        
+        &-item {
+            padding-top: 21px;
+            padding-left: 33px;
+
+            &--trending {
+                padding: 10px 0 28px 0;
+            }
+            
+            &--size {
+                padding: 0 0 10px 0;
+            }
+            
+            &--price {
+                padding: 0 0 20px 0;
+            }
+        }
+        
+        &-link {
+            color: $text-color;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    
+        &-input {
+            margin: 0 10px 0 0;
+
+            &--price {
+                width: 50px;
+            }
+        }
+    }
+    
+    &__sublist {
+        padding-top: 36px;
+
+        &--category {
+            display: block;
+        }
+
+        &--brands {
+            display: none;
+        }
+
+        &--designer {
+            display: none;
+        }
+
+        &-item {
+            padding-bottom: 11px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        
+        &-link {
+            text-decoration: none;
+            color: $grey-color;
+
+            &:hover {
+                color: $text-color;
+            } 
+        }
+    }
+}

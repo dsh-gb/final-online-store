@@ -1,0 +1,30 @@
+body {
+    font-family: Lato;
+    font-style: normal;
+    @include font();
+}
+
+.text-color {
+    color: $text-color;
+}
+
+.container {
+    width: 71%;
+    margin: 0 auto;
+    @include tablet {
+        width: 96%;
+    }
+    @include mobile {
+        width: 92%;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    @include size(1px, 1px);
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}

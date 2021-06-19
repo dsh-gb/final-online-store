@@ -1,0 +1,47 @@
+.breadcrumb {
+    background-color: $pink-crumb;
+
+    &__wrapper {
+        min-height: 148px;
+        @include flex(row, space-between, center);
+        @include mobile {
+            @include flex(column, center, center);
+        };
+        text-transform: uppercase;
+    }
+    
+    &__heading {
+        @include font(24px, 400, 29px);
+        @include mobile {
+            margin-bottom: 32px;
+        };
+        text-transform: uppercase;
+    }
+    
+    &__list {
+        display: flex;
+        list-style-type: " / ";
+
+        & li:first-child {
+            list-style-type: none;
+        }
+        
+        & li span:last-child {
+            font-weight: 700;
+        }
+        
+        &-link {
+            padding-right: 10px;
+        }
+        
+        &-link a {
+            text-decoration: none;
+            color: $grey-crumb;
+        }
+        
+        &-link:hover a {
+            color: $text-color;
+            font-weight: 700;
+        }
+    }
+}

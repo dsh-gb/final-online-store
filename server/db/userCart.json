@@ -1,0 +1,24 @@
+{
+    "amount": 264,
+    "countGoods": 4,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 1,
+            "product_name": "E3Z-D61",
+            "type": "Фотоэлектрический",
+            "description": "Датчик фотоэл., на пересечение луча, корпус нерж. сталь IP69K, ИК-свет, 15м, на тень, PNP, кабель 2м.",
+            "price": 75,
+            "imgPath": "img/product/1.jpg"
+        },
+        {
+            "quantity": 3,
+            "id_product": 5,
+            "product_name": "TL-W20ME1",
+            "type": "Индуктивный",
+            "description": "Датчик индуктивный прямоуг., незаподлицо, 20мм, 3-пров., NPN-НО, кабель 5м.",
+            "price": 63,
+            "imgPath": "img/product/5.jpg"
+        }
+    ]
+}

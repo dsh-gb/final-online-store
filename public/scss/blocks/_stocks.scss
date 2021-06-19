@@ -1,0 +1,81 @@
+.stocks {
+    &__list {
+        margin-top: 64px;
+        @include tablet {
+            margin-top: 20px;
+        };
+        @include mobile {
+            margin-top: 64px;
+        };
+        @include flex(row, space-between, normal);
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        width: 32%;
+        min-height: 260px;
+        @include tablet {
+            min-height: 167px;
+        };
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin-bottom: 32px;
+        };
+
+        &:hover {
+            filter: drop-shadow(7px 7px 10px $black-color);
+            cursor: pointer;
+        }
+
+        &:hover .stocks__item-link {
+            transform: scale(1.1);
+        }
+
+        background-size: cover;
+        @include flex(row, center, center);
+        text-align: center;
+    
+        &-link {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        &-text {
+            @include font(18px, 400, 19px);
+            color: $white;
+            padding-bottom: 20px;
+        }
+        
+        &-heading {
+            @include font(22px, 700, 29px);
+        }
+        
+        &--woman {
+            background-color: #bfcdd6;
+        }
+        
+        &--man {
+            background-color: #bfcdd6;
+        }
+        
+        &--kids {
+            background-color: #bfcdd6;
+        }
+        
+        &--accesories {
+            width: 100%;
+            min-height: 180px;
+            margin: 30px 0 97px 0;
+            @include tablet {
+                min-height: 116px;
+                margin-bottom: 155px;
+            };
+            @include mobile {
+                min-height: 111px;
+                margin: 0 0 64px 0;
+            };
+            background-color: #bfcdd6;
+        }
+    }
+}
