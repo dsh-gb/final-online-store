@@ -1,18 +1,27 @@
 {
-    "amount": 264,
-    "countGoods": 4,
+    "amount": 967,
+    "countGoods": 5,
     "contents": [
         {
-            "quantity": 1,
-            "id_product": 1,
-            "product_name": "E3Z-D61",
+            "quantity": 2,
+            "id_product": 3,
+            "product_name": "E3S-DCN21",
             "type": "Фотоэлектрический",
-            "description": "Датчик фотоэл., на пересечение луча, корпус нерж. сталь IP69K, ИК-свет, 15м, на тень, PNP, кабель 2м.",
-            "price": 75,
-            "imgPath": "img/product/1.jpg"
+            "description": "Датчик цветной метки E3S-DC, прямоугольный, 10 +/-3мм, NPN, разъём M12.",
+            "price": 330,
+            "imgPath": "img/product/3.jpg"
         },
         {
-            "quantity": 3,
+            "quantity": 2,
+            "id_product": 6,
+            "product_name": "E2K-C25ME1",
+            "type": "Емкостной",
+            "description": "Датчик емкостной, 34мм диаметр, неэкранированный, 25мм, DC, NPN-NO, кабель 2м.",
+            "price": 122,
+            "imgPath": "img/product/6.jpg"
+        },
+        {
+            "quantity": 1,
             "id_product": 5,
             "product_name": "TL-W20ME1",
             "type": "Индуктивный",
