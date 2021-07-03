@@ -1,0 +1,23 @@
+.navigation-item {
+    padding-bottom: 20px;
+
+    &__link {
+        padding-left: 34px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $text-color;
+        text-decoration: none;
+    }
+    
+    &__sublist-link {
+        padding: 11px 0 0 54px;
+        display: block;
+        text-decoration: none;
+        font-weight: 400;
+        color: $grey-color;
+    }
+    
+    &__sublist-link:hover {
+        color: $text-color;
+    }
+}

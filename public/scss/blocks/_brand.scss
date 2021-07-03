@@ -1,0 +1,58 @@
+.brand {
+    display: flex;
+
+    &__image {
+        @include size(50%, auto);
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__heading {
+        position: relative;
+        @include flex(column, normal, normal);
+        text-transform: uppercase;
+        @include font(48px, 900, 58px);
+        @include tablet {
+            @include font(44px, 900, 53px);
+        };
+        @include mobile {
+            @include font(38px, 900, 46px);
+        };
+
+        &-wrapper {
+            padding-left: 92px;
+            @include tablet {
+                padding-left: 67px;
+            };
+            @include flex(row, normal, center);
+            @include mobile {
+                min-height: 363px;
+                padding-left: 0;
+                justify-content: center;
+            };
+            flex-grow: 1;
+            background-color: #bcb3b5;
+        }
+
+        &-text {
+            @include font(32px, 700, 38px);
+            @include tablet {
+                @include font(24px, 700, 29px);
+            };
+            @include mobile {
+                @include font(20px, 700, 24px);
+            };
+        }
+
+        &-text::before {
+            content: '';
+            @include size(12px, 92px);
+            @include mobile {
+                @include size(12px, 61px);
+            };
+            background: $text-color;
+            @include position(-16px, 5px);
+        }
+    } 
+}

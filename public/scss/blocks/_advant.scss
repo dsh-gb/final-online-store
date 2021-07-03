@@ -1,0 +1,36 @@
+.advant {
+    height: 341px;
+    margin-top: 100px;
+    @include tablet {
+        min-height: 610px;
+    };
+    @include flex(row, normal, center);
+    background-color: $black-advant;
+
+    &__list {
+        @include flex(row, space-between, normal);
+        @include tablet {
+            @include flex(column, normal, center);
+        };
+    }
+    
+    &__item {
+        width: 360px;
+        min-height: 134px;
+        @include flex(column, space-between, center);
+        @include tablet {
+            padding: 24px 0 24px 0;
+        };
+
+        &-heading {
+            @include font(20px, 400, 24px);
+            color: $pink-advant;
+        }
+        
+        &-text {
+            padding: 0 30px 0 30px;
+            text-align: center;
+            color: $pink-advant;
+        }
+    }
+}

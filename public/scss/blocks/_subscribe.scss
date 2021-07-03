@@ -1,0 +1,119 @@
+.subscribe {
+    min-height: 448px;
+    @include tablet {
+        min-height: 614px;
+    };
+    @include mobile {
+        min-height: 550px;
+    };
+    background-image: url(../img/back_subscribe.jpg);
+    background-size: cover;
+
+    &__list {
+        @include flex(row, space-between, center);
+        @include tablet {
+            @include flex(column, normal, normal);
+        }
+    }
+    ;
+    &__wrapper {
+        @include flex(column, normal, center);
+
+        &-image {
+            margin: 97px 0 30px 0;
+            @include tablet {
+                margin: 64px 0 30px 0;
+            };
+        }
+        
+        &-text {
+            width: 360px;
+            text-align: center;
+            @include font(20px, 400, 24px);
+            @include mobile {
+                width: 80%;
+                @include font(19px, 400, 23px);
+            };
+            color: $black-advant;
+        }
+        
+        &-heading {
+            margin: 150px 0 32px 0;
+            @include tablet {
+                margin: 90px 0 27px 0;
+            };
+            @include mobile {
+                margin: 100px 0 22px 0;
+            };
+            @include flex(column, normal, center);
+            text-transform: uppercase;
+            @include font(24px, 700, 38px);
+            color: $black-advant;
+        }
+
+        &-heading-text {
+            @include font(18px, 400, 30px);
+            @include mobile {
+                @include font(14px, 400, 21px);
+            }    
+        }
+    };
+    
+    &__form {
+        @include size(356px, 49px);
+        @include tablet {
+            margin-bottom: 140px;
+        };
+        @include mobile {
+            margin-bottom: 110px;
+            width: 90%;
+        };
+        @include flex(row, center, normal);
+
+        &-mail {
+            @include size(256px, 49px);
+            padding: 0 0 0 22px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: $white-bgc;
+            border-style: none;
+            outline: none;
+
+            &::-webkit-input-placeholder {
+                font-family: Lato;
+                font-style: normal;
+                @include font(14px, 400, 17px);
+                color: $black-advant;
+            }
+            
+            &:focus::-webkit-input-placeholder {
+                text-indent: 256px;
+                transition: text-indent 0.3s ease;
+            }
+        };
+        
+        &-btn {
+            @include size(100px, 49px);
+            padding: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: $text-color;
+            color: $white;
+            font-weight: 400;
+            border-style: none;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                text-transform: uppercase;
+                color: $text-color;
+                font-weight: 700;
+                cursor: pointer; 
+            }
+        };
+    }
+    &--margin {
+        @include mobile {
+            margin-top: 64px;
+        }
+    }
+}

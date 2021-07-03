@@ -1,0 +1,26 @@
+.carousel__img {
+    width: 597px;
+    min-height: 724px;
+    @include tablet {
+        width: 466px;
+        min-height: 565px;
+    }
+    @include mobile {
+        width: 374px;
+        min-height: 454px;
+    }
+}
+
+.carousel__prev,
+.carousel__next {
+    @include size(47px, 47px);
+    @include flex(row, center, center);
+    font-size: 40px;
+    color: #000;
+    background-color: rgba(42, 42, 42, 0.15);
+}
+
+.carousel__prev:hover, 
+.carousel__next:hover {
+    color: $text-color;
+}

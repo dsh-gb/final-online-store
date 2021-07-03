@@ -1,0 +1,94 @@
+.description {
+    margin-top: -64px;
+    margin-bottom: 129px;
+    min-height: 601px;
+    position: relative;
+    @include flex(column, normal, center);
+    background-color: #FFF;
+    border: 1px solid $pink-cart;
+    @include tablet {
+        width: 100%;
+        margin-top: 0;
+    }
+    @include mobile {
+        margin-bottom: 64px;
+    }
+
+    &__collection {
+        margin: 64px 0 27px 0;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        margin-bottom: 48px;
+        @include font(18px, 300, 22px);
+        color: #4D4D4D;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        width: 555px;
+        margin-bottom: 32px;
+        @include font(14px, 300, 17px);
+        color: #5E5E5E;
+        text-align: center;
+        @include mobile {
+            width: 87%;
+        }
+    }
+
+    &__price {
+        margin-bottom: 65px;
+        @include font(24px, 300, 29px);
+        color: #EF5B70;
+    }
+
+    &__line {
+        fill: #EAEAEA;
+        @include mobile {
+            width: 175px;
+        }
+    }
+
+    &__wrapper {
+        // width: 373px;
+        margin: 65px 0 49px 0;
+        @include flex(row, space-between, normal);
+    }
+
+    &__filter {
+        @include font(14px, 400, 17px);
+        @include mobile {
+            @include font(10px, 400, 12px);
+        };
+        color: #6F6E6E;
+
+        &--padding {
+            padding: 0 42px 0 42px;
+        }
+    }
+
+    &__button {
+        @include size(211px, 47px);
+        @include flex(row, center, center);
+        border: 1px solid #FF6A6A;
+        background-color: #FFF;
+        @include font(16px, 400, 19px);
+        color: #F26376;
+        &-icon {
+            margin-right: 23px;
+            fill: #EF5B70;
+        }
+
+        &:hover {
+            color: #FFF;
+            background-color:#F26376;
+            transition: background-color 0.9s ease;
+        }
+
+        &:hover svg {
+            fill: #FFF;
+        }
+    }   
+}
